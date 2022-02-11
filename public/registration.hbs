@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form name="myForm" onsubmit="return validateForm()" action="/registration" method="post" class="form" required>
+      <h1 class="text-center">Registration Form</h1>
+      <p class="text-center">{{msg}}</p>
+
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input type="text" name="mobileNumber" id="mobileNumber" />
+        </div>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="pwd">PWD</label>
+          <input type="text" name="pwd" id="pwd" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+      <div class="input-group">
+         <label for="panno">PAN NO</label>
+         <input type="text" name="panno" id="panno" />
+       </div>
+    <div class="input-group">
+         <label for="fname">Fathers Name</label>
+         <input type="text" name="fname" id="fname" />
+       </div>
+       <div class="input-group">
+         <label for="dob">Date of Birth</label>
+         <input type="date" name="dob" id="dob" />
+       </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input onclick="window.location.href ="/welcome.html" type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+        <script src="js/script.js" defer></script>
+  </body>
+</html>
